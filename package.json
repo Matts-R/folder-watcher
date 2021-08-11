@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "folderwatch",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
