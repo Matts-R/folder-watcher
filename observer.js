@@ -55,11 +55,11 @@ class Observer extends EventEmitter {
 	writeInLog(entry) {
 		let log = this.newLogFile();
     fsExtra.ensureFileSync(log);
-		const CreateFiles = fsExtra.createWriteStream(log, {
+		const fileStream = fsExtra.createWriteStream(log, {
 		  flags: 'a' //flags: 'a' preserved old data
 		})
 
-		  CreateFiles.write(entry + '\r') //'\r\n at the end of each value
+		  fileStream.write(entry + '\r') //'\r\n at the end of each value
 	}
 
 	newLogFile() {
